@@ -11,10 +11,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #F2F4F7;
+    padding-bottom: 20px;
+    min-height: 100vh;
 }
 
 .top-content img {
     width: 300px;
+    margin: 15px 0;
 }
 
 .bottom-content {
@@ -63,6 +66,7 @@ hr {
     border-radius: 5px;
 }
 
+
 .dob {
     width: 100%;
     display: flex;
@@ -74,12 +78,10 @@ hr {
     margin-bottom: 6px;
 }
 
-.para span {
-    background-color: gray;
-    padding: 0px 3px;
+.para i {
+    color: gray;
+    font-size: 13px;
     cursor: pointer;
-    border-radius: 50%;
-    color: white;
 }
 
 .day,
@@ -126,6 +128,28 @@ hr {
     margin-bottom: 10px;
 }
 
+.inputFields #passwordInput {
+    margin-bottom: 0;
+    padding-right: 35px;
+}
+
+.inputFields div {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputFields i {
+    position: absolute;
+    padding: 5px 20px 5px 5px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    color: #7b7b7b;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 .bottom-text {
     font-size: 11px;
     margin-top: 10px;
@@ -149,10 +173,10 @@ hr {
     border-radius: 6px;
     color: #fff;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     margin: 20px auto;
-    padding: 15px 60px;
+    padding: 15px 55px;
     width: fit-content;
     align-self: center;
     cursor: pointer;
@@ -164,7 +188,6 @@ hr {
 
 .bottom-link {
     color: #1877f2;
-    font-size: 17px;
     text-decoration: none;
     display: block;
     width: fit-content;
@@ -176,8 +199,9 @@ hr {
 }
 
 @media (max-width: 460px) {
-    body {
-        height: 100vh;
+
+    .top-content {
+        margin-bottom: 30px;
     }
 
     .top-content img {
@@ -201,17 +225,17 @@ hr {
         font-size: 9px;
     }
 
-    .btn2 {
-        font-size: 15px;
-        padding: 12px 40px;
-    }
-
     .bottom-link {
         font-size: 15px;
     }
 }
 
 @media (max-width: 380px) {
+
+    * {
+        cursor: default;
+    }
+
     body {
         background-color: #fff;
     }

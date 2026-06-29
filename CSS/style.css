@@ -67,6 +67,8 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
     margin-top: 4px;
 }
@@ -133,10 +135,6 @@ form hr {
         font-size: 22px;
     }
 
-    .left-content {
-        margin-top: 200px;
-    }
-
     .left-content img {
         width: 280px;
         margin-left: -25px;
@@ -150,13 +148,17 @@ form hr {
 }
 
 @media (max-width: 767px) {
+    * {
+        cursor: default !important;
+    }
+
     body {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     .left-content {
-        margin-top: 0px;
         width: 300px;
     }
     .left-content p {
@@ -169,10 +171,11 @@ form hr {
     }
 
     .right-content {
-        margin-top: -60px;
+        width: 100%;
+        max-width: 370px;
     }
 
     .right-content form {
-        width: 370px;
+        width: 100%;
     }
 }

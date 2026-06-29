@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/signup.css">
     <title>Facebook - Sign up</title>
 </head>
@@ -25,8 +28,8 @@
                 <input type="text" placeholder="Surname">
             </div>
 
-            <p class="para gray">Date of birth <span>?</span></p>
-            
+            <p class="para gray">Date of birth <i class="fa-solid fa-circle-question"></i></p>
+
             <div class="dob">
                 <select class="day">
                     <option>1</option>
@@ -203,17 +206,17 @@
                 </select>
             </div>
 
-            <p class="para gray">Gender <span>?</span></p>
+            <p class="para gray">Gender <i class="fa-solid fa-circle-question"></i></p>
 
             <div class="gender-box">
                 <label class="gender">
-                    Female<input type="radio" name="gender">
+                    Female<input type="radio" name="gender" value="female">
                 </label>
                 <label class="gender">
-                    Male<input type="radio" name="gender">
+                    Male<input type="radio" name="gender" value="male">
                 </label>
                 <label class="gender">
-                    Other<input type="radio" name="gender">
+                    Other<input type="radio" name="gender" value="other">
                 </label>
             </div>
 
@@ -222,10 +225,14 @@
                 <input type="password" placeholder="New password">
             </div>
 
-            <p class="bottom-text">People who use our service may have uploaded your contact information to Facebook <span>Learn more.</span></p>
-            <p class="bottom-text">By clicking Sign up, you agree to our <span>Terms</span>, <span>Privacy Policy</span> and <span>Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
+            <p class="bottom-text">People who use our service may have uploaded your contact information to Facebook
+                <span>Learn more.</span>
+            </p>
+            <p class="bottom-text">By clicking Sign up, you agree to our <span>Terms</span>, <span>Privacy Policy</span>
+                and <span>Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.
+            </p>
 
-            <a href="signup.html" class="btn2">Sign up</a>
+            <button class="btn2">Sign up</button>
 
             <a href="../index.html" class="bottom-link">Already have an account?</a>
         </form>
